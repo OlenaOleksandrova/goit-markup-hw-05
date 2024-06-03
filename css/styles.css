@@ -616,11 +616,17 @@ padding-top: 72px;
     position: absolute;
     top: 24px ;
     right: 24px;
-    border-radius: 50%;
+   border:none;
+    width: 24px;
+    height: 24px;
+    background-color: #E7E9FC;
+    border-radius: 100%;
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.1);
+   
 }
 .modal-icon {
-    fill: #2e2f42;
-    color: black;
+fill: #2e2f42;
   
 }
 
