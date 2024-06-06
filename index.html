@@ -449,37 +449,34 @@
                     </li>
                 </ul>
              </div>
-        </div>
-
         
+
+        <div class="form-container">
+            <p class="form-text-footer">Subscribe</p>
             <form class="form-footer-container">
-                <h3 class="form-text-footer">Subscribe</h3>
-                  <div class="form-container">
-               
-        <label  class="footer-form"> 
-            <input class="form-input-footer" type="text" name="Email" placeholder="E-mail"/>
-            </label>
-            
-            <div>
-            <button class="form-button-footer" type="submit">Subscribe
-                <svg class="telegram-button" width="24" height="24">
-                    <use href="./images/telegram.svg#icon-telegramF">
-
-                    </use>
-                </svg>
-            </button>
+                
+                <div class="footer-form-wrap">
+                 <label for="footer-email" class="footer-form"> 
+                    <input class="form-input-footer" type="email" name="Email" id="footer-email" placeholder="E-mail"/>
+                </label>
             </div>
 
+                <button class="form-button-footer" type="submit">Subscribe
+                    <svg class="telegram-button" width="24" height="24">
+                        <use href="./images/telegram.svg#icon-telegramF"></use>
+                    </svg>
+                </button>
+
+                </form>
+
             </div>
-            </form>
-
-            
-
+        </div>
+        </footer>
     <!-- Модальне вікно -->
 
 <div class="modal-overlay">
     <div class="modal">
-        <button type="button" class="madal-button-close">
+        <button type="button" class="modal-button-close">
             <svg class="modal-icon" width="8" height="8">
                 <use href="./images/icons2.svg#icon-close-black"> </use>
             </svg>
@@ -528,9 +525,12 @@
             <label  for="user-comment">Comment</label>
                 <textarea name="Comment" id="Comment" class="modal-text" placeholder="Text input"></textarea>
         </div>
-            
+        
             <label class="form-checkbox">
                 <input type="checkbox" name="privat policy" value="music" />
+                <svg class="checkbox-icon"  width="10" height="8">
+                    <use href="./images/Vector.svg#icomoon-ignore"></use>
+                </svg>
                 I accept the terms and conditions of the <span class="span-checkbox">Privacy Policy</span>
             </label>
             <button class="form-button" type="submit">Send</button>
