@@ -666,7 +666,6 @@ p {
     justify-content: center;
     align-items: center;  
     
-
     opacity: 0;
     pointer-events: none; 
     transition: opacity 250ms;
