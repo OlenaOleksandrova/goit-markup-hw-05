@@ -754,8 +754,10 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .modal-field {
-    
     margin-bottom: 8px;
+}
+.email-modal-wrap {
+    margin-bottom: 16px;
 }
 .modal-label {
     font-size: 12px;
