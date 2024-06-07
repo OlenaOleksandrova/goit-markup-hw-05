@@ -471,8 +471,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background: #2e2f42;
      padding-top: 100px;
      padding-bottom: 100px;
-     /* display: flex;
-    justify-content: space-between; */
   
 }
   .footer-container-first {
@@ -488,11 +486,9 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     max-width: 264px;
 
     font-weight: 400;
-     font-size: 16px;
-       
-        
-        
+     font-size: 16px;   
 }
+
 .studio-footer {
     font-weight: 700;
     font-size: 18px;
@@ -501,8 +497,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-transform: uppercase;
     color: #f4f4fd;
     font-family: "Raleway", sans-serif;}
-
-
 
 .logo-footer {
     display: inline-block;
@@ -526,18 +520,17 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 280px;
     height: 80px;
     margin-right: 80px;
-
    }
  
 
 .footer-text-two {
     font-family: "Roboto", sans-serif;
-       font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #fff;
-        margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
 
 }
 .footer-ferst-second-section {
@@ -575,7 +568,7 @@ list-style: none;
 }
 
 .icon-footer
-{fill: #f4f4fd
+{fill: #f4f4fd;
 }
 
 /* footer 3 */
@@ -592,7 +585,7 @@ list-style: none;
     line-height: 2;
     letter-spacing: 0.04em;
     background-color: transparent;
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 .footer-form {
     margin-right: 24px;
@@ -625,8 +618,7 @@ list-style: none;
     line-height: 2;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    }
-}
+  }
 
 .form-button-footer {
     border-radius: 4px;
@@ -639,8 +631,7 @@ list-style: none;
     align-items: center;
     cursor: pointer;
     border: none;
-   
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -724,12 +715,10 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-button-close:hover{
-   background-color: #404bbf;
-   border: none;
+ fill: #FFFFFF;
 }
 .modal-button-close:focus {
-    background-color: #404bbf;
-    border: none;
+   fill: #FFFFFF;
 }
 .modal-icon {
 color: #2e2f42;
@@ -762,7 +751,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-field {
     
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 .modal-label {
     font-size: 12px;
@@ -898,6 +887,9 @@ fill: #f4f4fd;
     fill: transparent;
 
 }
-
+.checkbox:checked + .checkbox  span {
+    border: none;
+    fill: #f4f4fd;
+}
 
 
