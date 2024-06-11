@@ -37,14 +37,33 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .container {
-    width: 1158px;
-    padding: 0 15px;
+    /* width: 1158px;
+    padding: 0 15px; */
     margin: 0 auto;
+    max-width: 320px;
+    padding: 0 16px;
 }
+@media screen and (min-width: 768px)
+    {
+        .container {
+            max-width: 768px;
+        }
+    }
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+}
+        
+    
+
 
 .header-container {
     display: flex;
     align-items: center;
+
+    justify-content: space-between;
 }
 .novigation {
     display: flex;
@@ -53,9 +72,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .nav-list {
-    display: flex;
+    /* display: flex;
     gap: 40px;
-    
+     */
+     display: none;
 }
 .logo {
     font-weight: 700;
@@ -65,18 +85,123 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     text-transform: uppercase;
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
-    margin-right: 76px;
+    /* margin-right: 76px; */
+
+    padding: 16px 0;
 }
 .address {
     font-style: normal;
     margin-left: auto;
+    display: none;
     
+}
+/* .address-list {
+    display: flex;
+    gap: 40px;
+} */
+.open-menu-btn {
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+@media screen and (min-width:768px) {
+    
+    .open-menu-btn {
+                display: none;
+            }
+    
+    .logo {
+        margin-right: 120px;;
+    }
+    .nav-list {
+        display: flex;
+        gap: 40px;
+        }
+.link-studio {
+    color: #404bbf;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
+    transition-property: #4D5AE5;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-studio::after {
+    color: #404bbf;
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+
+.link {
+    color: #2E2F42;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
+    transition-property: #4D5AE5;
+    position: relative;
+}
+
+.link:hover {
+    color: #404bbf;
+}
+
+.link:focus {
+    color: #404bbf;
+}
+.address {
+    display: block;
 }
 .address-list {
     display: flex;
-    gap: 40px;
-   
+    flex-direction: column;
+    gap: 12px;
 }
+.info {
+    color: #434455;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info:hover {
+    color: #404BBF;
+}
+
+.info:focus {
+    color: #404bbf;
+}
+    }
+     @media screen and (min-width:1158px) {
+        .logo {
+            margin-right: 76px;
+        }
+        .address-list {
+            flex-direction: row;
+            gap: 40px;;
+        }
+        .info {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+    
+
  .studio {
     font-weight: 700;
     font-size: 18px;
@@ -89,22 +214,11 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .studio-line {
     color: #404bbf; }
 
-.link {
-    color: #2E2F42;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    padding: 24px 0;
-    display:block;
-    transition-property: #4D5AE5;
-    position: relative;
-}
-.link:hover { color: #404bbf;}
-.link:focus { color: #404bbf;}
+
+
 .link:active { color: #404BBF;}
 
-.info {color: #434455;
+/* .info {color: #434455;
     font-size: 16px;
     line-height: 1.5;
      letter-spacing: 0.02em;
@@ -114,11 +228,11 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 .info:focus {
     color: #404bbf;
-}
+} */
 .nav-list .list {
     transition-property: color;
 }
-.link-studio{  
+/* .link-studio{  
 color:#404bbf;
 font-size: 16px;
 line-height: 1.5;
@@ -142,6 +256,24 @@ height: 4px;
 background-color: #404bbf;
 border-radius: 2px;
 }
+.link {
+    color: #2E2F42;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
+    transition-property: #4D5AE5;
+    position: relative;
+}
+.link:hover {
+    color: #404bbf;
+}
+
+.link:focus {
+    color: #404bbf;
+} */
 
 /* title-section 1*/
 
