@@ -47,6 +47,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     {
         .container {
             max-width: 768px;
+            padding: 0 16px;
         }
     }
 @media screen and (min-width: 1158px) {
@@ -273,13 +274,140 @@ border-radius: 2px;
     color: #404bbf;
 } */
 
+/* Mob-menu */
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /* visibility: hidden;
+    opacity: 0;
+    pointer-events: none; */
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 40px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.menu-btn {
+    display: block;
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    fill: #e7e9fc;
+    stroke-width: 1px;
+    stroke: #2e2f42;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 24px;
+}
+
+.menu-icon {
+    fill: #2e2f42;
+}
+.menu-icon-wrap {
+    width: 24px;
+    height: 24px;
+}
+.menu-list-nav {
+
+}
+
+.menu-nav-list:not(:last-child) {
+    margin-bottom: 40px;
+   
+}
+
+.menu-nav-studio {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #404bbf;
+    
+}
+
+.menu-nav {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: black;
+}
+.menu-address {
+    margin-top: auto;
+}
+
+.menu-address-list {
+}
+
+.menu-address-list-contact:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.menu-info {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    font-style: normal;
+}
+
+.menu-info-tel {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #4d5ae5;
+    font-style: normal;
+}
+
+.menu-list {
+    display: flex;
+    gap: 40px;
+    margin-top: 48px;
+    justify-content: center;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-mob-menu {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    color: #f4f4fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-mob-icon {
+fill: #f4f4fd;
+}
+
+.menu-icon-wrap {}
+
+
 /* title-section 1*/
 
 .title-section {background: #2e2f42;
     /* padding-top: 188px;
     padding-bottom: 188px;
     max-height: 600px; */
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgr1x-mob.jpg);
     /* max-width: 1440px; */
     background-repeat: no-repeat;
     background-position: center;
@@ -291,6 +419,14 @@ border-radius: 2px;
     max-height: 432px;
     
  }
+@media screen and (-wekit-min-device-pixel-ratio: 2), 
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .title-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgr2x-mob-min.jpg);
+    }
+}
+
 .title {
     font-weight: 700;
     /* font-size: 56px;
@@ -351,6 +487,8 @@ letter-spacing: 0.04em
         max-height: 436px;
         padding-top: 120px;
         padding-bottom: 120px;
+        background: #2e2f42;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgr1x-tab-min.jpg);
         
     }
     .title {
@@ -358,6 +496,13 @@ letter-spacing: 0.04em
         line-height: 1.11;
     
     }
+        @media screen and (-wekit-min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+        .title-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgr2x-tab-min.jpg);
+            }
+        }
 }
     
 @media screen and (min-width:1158px)
@@ -367,7 +512,17 @@ letter-spacing: 0.04em
         padding-bottom: 188px;
         max-height: 600px;
         max-width: 1440px;
+
+        background: #2e2f42;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgr1x-desk-min.jpg);
    } 
+@media screen and (-wekit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .title-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgr2x-desk-min.jpg);
+    }
+}
    .title {
         font-size: 56px;
         line-height: 1.07143;
