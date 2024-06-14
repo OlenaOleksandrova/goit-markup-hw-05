@@ -739,7 +739,6 @@ ul {
     background-color: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     padding: 0px 0px 32px 0px;
-    /* width: 100%; */
     width: 264px;
     height: 428px;
 }
@@ -855,21 +854,30 @@ width: calc((100% - 24px)/2);
 @media screen and (min-width:1158px) {
     
     .cont-mob {
-        
+        width: 1158px;
     }
-    
     .our-team-card-list {
         display: flex;
         gap: 24px;
-}
-    .our-team {
-       
-        width: 1440px;
+        justify-content: center;
+        align-items: center;
     }
-   
+    .list-info-personal {
+        width: calc((100% - 72px) / 4);
+        }
+    .card-image {
+            display: block;
+            min-width: 100%;
+        }
 
+    .our-team {
+       padding-top: 120px;
+       padding-bottom: 120px;
+    }
+    
     }
   
+
      /* Our portfolio section 4  */
 
 .our-portfolio{
