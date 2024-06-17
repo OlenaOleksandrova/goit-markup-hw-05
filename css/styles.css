@@ -204,7 +204,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .info {
     color: #434455;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -493,9 +493,9 @@ fill: #f4f4fd;
 {
     .title-section {
         max-width: 768px;
-        max-height: 436px;
-        padding-top: 120px;
-        padding-bottom: 120px;
+        background-size: cover;
+        padding-top: 112px;
+        padding-bottom: 112px;
         background: #2e2f42;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgr1x-tab-min.jpg);
 
@@ -520,9 +520,9 @@ fill: #f4f4fd;
    .title-section {
         padding-top: 188px;
         padding-bottom: 188px;
-        max-height: 600px;
         max-width: 1440px;
         background: #2e2f42;
+        background-size: cover;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgr1x-desk-min.jpg);
    } 
 @media screen and (-wekit-min-device-pixel-ratio: 2),
@@ -544,6 +544,8 @@ fill: #f4f4fd;
 
 .main-info-section {
     background-color: #FFFFFF;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -566,8 +568,6 @@ fill: #f4f4fd;
     flex-direction: column;
     display: flex;
     gap: 72px;
-    padding-top: 96px;
-    padding-bottom: 96px;
     
 }
 .list-main {
@@ -645,6 +645,9 @@ fill: #f4f4fd;
 /*  */
 
 @media screen and (min-width:768px) {
+    .main-info-section {
+        padding-top: 96px 0;
+    }
     .main-info-list {
         display: flex;
         flex-direction: row;
@@ -660,7 +663,13 @@ fill: #f4f4fd;
 }
 }
 @media screen and (min-width:1158px) {
-    .cont-main-info{
+    .cont-main-info {
+        height: 224px;
+    
+    }
+    
+    .main-info-section{
+        padding-top: 120px;
         padding-bottom: 120px;
 }
      .main-info-list {
@@ -709,7 +718,7 @@ fill: #f4f4fd;
     border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    padding: 0px 0px 32px 0px;
+    padding: 0px 0px 32px 0px; 
     width: 264px;
     height: 428px;
 }
@@ -800,9 +809,8 @@ fill: #f4f4fd;
 @media screen and (min-width:768px) {
     
     .cont-mob {
-       width: 768px;
-       padding-right: 108px;
-       padding-left: 108px;
+       width: 584px;
+      
     }
     .our-team-card-list {
         display: flex;
@@ -1132,8 +1140,8 @@ justify-content: space-between; */
 }
 @media screen and (min-width: 768px) {
 .footer-ferst-second-section {
-     width: 768px;
-     padding-left: 108px;
+     width: 584px;
+     
      }
 .logo-footer {
     display: flex;
@@ -1164,16 +1172,16 @@ text-align: center;
     width: 1128px;
     align-items: baseline;
     justify-content: space-between;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 15px;
+    padding-left: 15px;
 
 }
 
-.form-footer-container {
+/* .form-footer-container {
     
     display: flex;
     gap: 24px;
-        }
+        } */
 .form-text-footer {
     text-align: left;
 }
@@ -1189,6 +1197,7 @@ text-align: center;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -1362,7 +1371,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-policy-mob {
-    
     
 }
 .form-button {
