@@ -1071,9 +1071,13 @@ justify-content: space-between; */
 .form-footer-container {
     /* flex-direction: column; */
     display: flex;
-    flex-wrap: wrap;
+
+
+
+
+    /* flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 16px;
+    row-gap: 16px; */
 }
 
 .form-input-footer {
@@ -1090,10 +1094,12 @@ justify-content: space-between; */
     letter-spacing: 0.04em;
     background-color: transparent;
     color: #FFFFFF;
+
 }
 
 .footer-form {
-    margin: 0 auto;
+   margin-right: 24px;
+
 }
 
 ::placeholder {
