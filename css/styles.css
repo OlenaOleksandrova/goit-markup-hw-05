@@ -1361,6 +1361,10 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #4d5ae5;
 }
 
+.checkbox-policy-mob {
+    
+    
+}
 .form-button {
     border-radius: 4px;
     padding: 16px 32px;
@@ -1378,6 +1382,9 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
 }
 .form-checkbox {
     font-weight: 400;
@@ -1385,6 +1392,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    display: flex;
     }
 
 .checkbox-icon{
