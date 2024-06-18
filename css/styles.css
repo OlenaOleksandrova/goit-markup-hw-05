@@ -429,7 +429,7 @@ fill: #f4f4fd;
     padding-top: 72px;
     padding-bottom: 72px;
     max-width: 320px;
-    max-height: 432px;
+    /* max-height: 432px; */
     
  }
 @media screen and (-wekit-min-device-pixel-ratio: 2), 
@@ -959,6 +959,7 @@ fill: #f4f4fd;
     display: flex;
     flex-direction: column;
     gap: 72px;
+    
     /* align-items: baseline;
 justify-content: space-between; */
 
@@ -1068,17 +1069,6 @@ justify-content: space-between; */
     margin-bottom: 16px;
     text-align: center;
 }
-.form-footer-container {
-    /* flex-direction: column; */
-    display: flex;
-
-
-
-
-    /* flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 16px; */
-}
 
 .form-input-footer {
 
@@ -1128,6 +1118,7 @@ justify-content: space-between; */
     text-align: center;
     color: #fff;
     margin: 0 auto;
+    margin-top: 16px;
 }
 
 .telegram-button {
